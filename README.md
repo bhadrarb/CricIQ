@@ -1,193 +1,94 @@
 # CricIQ
 
-An end-to-end cricket analytics platform that predicts IPL match winners using Machine Learning and provides an interactive dashboard built with Streamlit.
+CricIQ is a machine learning-based cricket analytics platform that predicts IPL match winners using historical match data. The application provides an interactive Streamlit dashboard for match prediction and team analytics.
 
 ---
-
-## Overview
-
-CricIQ uses historical IPL match data to predict the winner of a match based on factors such as team form, venue performance, toss details, home advantage, and head-to-head records. The application includes a user-friendly Streamlit interface for making predictions and viewing analytics.
-
 ---
 
 ## Features
-
-- Predict IPL match winners using Machine Learning
-- Interactive Streamlit web application
-- Team-wise performance statistics
+Predict IPL match winners
+- Team performance statistics
 - Head-to-head analysis
-- Home advantage calculation
-- Venue-based win rate analysis
-- Recent form analysis
+- Recent form and venue-based feature engineering
+- Interactive Streamlit dashboard
 - Comparison of multiple ML models
-
 ---
 
 ## Tech Stack
 
-### Programming Language
 - Python
-
-### Machine Learning
-- Scikit-learn
-- XGBoost
-
-### Data Processing
 - Pandas
 - NumPy
-
-### Visualization
-- Plotly
-
-### Web Framework
+- Scikit-learn
+- XGBoost
 - Streamlit
-
-### Model Serialization
+- Plotly
 - Joblib
-
----
-
-## Project Structure
-
-```
-criciq/
-│
-├── app/
-│   └── app.py
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── models/
-│   ├── train.py
-│   ├── predict.py
-│   ├── best_model.pkl
-│   └── target_encoder.pkl
-│
-├── utils/
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   └── feature_calculator.py
-│
-├── assets/
-│
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-
----
-
+  
 ## Dataset
 
 - IPL Matches Dataset (2008–2024)
-- Total Matches: **1090**
-- Features include:
-  - Season
-  - Teams
-  - Venue
-  - Toss Winner
-  - Toss Decision
-  - Recent Form
-  - Head-to-Head Win Rate
-  - Venue Win Rate
-  - Home Advantage
+- 1090 historical matches
 
----
+### Features Used
 
-## Feature Engineering
+- Season
+- Teams
+- Venue
+- Toss Winner
+- Toss Decision
+- Recent Form
+- Head-to-Head Win Rate
+- Venue Win Rate
+- Home Advantage
 
-The model uses historical information available before a match to generate predictive features.
+## Model Performance
 
-- Recent form (last five matches)
-- Head-to-head win rate
-- Venue-specific win rate
-- Home ground advantage
+model accuracy
 
----
-
-## Machine Learning Models
-
-The project compares multiple classification models.
-
-| Model | Accuracy |
-|--------|----------|
-| Logistic Regression | 50.92% |
-| Random Forest | 50.92% |
-| XGBoost | **52.29%** |
+Logistic Regression - 50.92% 
+Random Forest - 50.92% 
+XGBoost - **52.29%** 
 
 The best-performing model is automatically saved and used for prediction.
 
----
 
-## Application
+## Project Structure
 
-The Streamlit dashboard allows users to:
-
-- Select teams
-- Select venue
-- Select toss winner
-- Select toss decision
-- Predict match winner
-- View prediction confidence
-- View team statistics
-
----
-
-## Installation
-
-Clone the repository.
-
-```bash
+```text
+criciq/
+│── app/
+│── data/
+│── models/
+│── utils/
+│── requirements.txt
+│── README.md
+└── .gitignore
+## running the project
 git clone https://github.com/YOUR_USERNAME/criciq.git
-```
-
-Go into the project.
-
-```bash
 cd criciq
-```
-
-Install dependencies.
-
-```bash
 pip install -r requirements.txt
-```
 
-Run the application.
-
-```bash
 streamlit run app/app.py
 ```
-
----
 
 ## 📸 Screenshots
 
 ### Home Page
 
-(Add Screenshot)
+(assets/home.png)
 
 ### Prediction Result
 
-(Add Screenshot)
-
-### Team Statistics
-
-(Add Screenshot)
+(assets/prediction.png)
 
 ---
 
 ## Future Improvements
-
-- Live match data integration through cricket APIs
-- Player performance analysis
+- Hyperparameter tuning
+- Live cricket API integration
+- Player performance analytics
 - Win probability visualization
-- Advanced model tuning
-- Semantic match search
-- Match history dashboard
-
 ---
 
 ## Author
