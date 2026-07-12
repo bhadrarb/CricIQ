@@ -72,15 +72,16 @@ pip install -r requirements.txt
 streamlit run app/app.py
 ```
 
-## 📸 Screenshots
+## Screenshots
+
 
 ### Home Page
 
-(assets/home.png)
+![Home Page](assets/home.png)
 
 ### Prediction Result
 
-(assets/prediction.png)
+![Prediction Result](assets/prediction.png)
 
 ---
 
