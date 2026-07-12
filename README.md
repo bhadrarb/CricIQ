@@ -1,16 +1,16 @@
-# 🏏 CricIQ
+# CricIQ
 
 An end-to-end cricket analytics platform that predicts IPL match winners using Machine Learning and provides an interactive dashboard built with Streamlit.
 
 ---
 
-## 📌 Overview
+## Overview
 
 CricIQ uses historical IPL match data to predict the winner of a match based on factors such as team form, venue performance, toss details, home advantage, and head-to-head records. The application includes a user-friendly Streamlit interface for making predictions and viewing analytics.
 
 ---
 
-## ✨ Features
+## Features
 
 - Predict IPL match winners using Machine Learning
 - Interactive Streamlit web application
@@ -23,7 +23,7 @@ CricIQ uses historical IPL match data to predict the winner of a match based on 
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Programming Language
 - Python
@@ -47,7 +47,7 @@ CricIQ uses historical IPL match data to predict the winner of a match based on 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 criciq/
@@ -79,7 +79,7 @@ criciq/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 - IPL Matches Dataset (2008–2024)
 - Total Matches: **1090**
@@ -96,7 +96,7 @@ criciq/
 
 ---
 
-## ⚙️ Feature Engineering
+## Feature Engineering
 
 The model uses historical information available before a match to generate predictive features.
 
@@ -107,7 +107,7 @@ The model uses historical information available before a match to generate predi
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 The project compares multiple classification models.
 
@@ -121,7 +121,7 @@ The best-performing model is automatically saved and used for prediction.
 
 ---
 
-## 🖥 Application
+## Application
 
 The Streamlit dashboard allows users to:
 
@@ -135,7 +135,7 @@ The Streamlit dashboard allows users to:
 
 ---
 
-## 🚀 Installation
+## Installation
 
 Clone the repository.
 
@@ -179,7 +179,7 @@ streamlit run app/app.py
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Live match data integration through cricket APIs
 - Player performance analysis
@@ -190,7 +190,7 @@ streamlit run app/app.py
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Bhadra R B**
 
