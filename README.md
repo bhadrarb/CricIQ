@@ -4,6 +4,9 @@ CricIQ is a machine learning-based cricket analytics platform that predicts IPL 
 
 ---
 ---
+## Live Demo
+
+https://criciq-gj4drxkrm4euq6qp4a2bnv.streamlit.app/
 
 ## Features
 Predict IPL match winners
